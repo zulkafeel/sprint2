@@ -1,0 +1,77 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Failure in registration on leaving the first Name empty",
+        "description": "",
+        "id": "registration-action;failure-in-registration-on-leaving-the-first-name-empty",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8018943700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User is on the Register page",
+            "match": {
+              "location": "RegisterDemo.user_is_on_the_Register_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7653313900,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user leaves first Name field blank",
+            "match": {
+              "location": "RegisterDemo.user_leaves_first_Name_field_blank()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5163731800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "clicks the button",
+            "match": {
+              "location": "RegisterDemo.clicks_the_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.WebDriverException: chrome not reachable\n  (Session info: chrome\u003d86.0.4240.198)\nBuild info: version: \u00273.14.0\u0027, revision: \u0027aacccce0\u0027, time: \u00272018-08-02T20:19:58.91Z\u0027\nSystem info: host: \u0027LAPTOP-185Q3FTV\u0027, ip: \u0027192.168.2.102\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_261\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.198, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\\Users\\zulka\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59104}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 3a9e11a72bf5cdce56f0e66ca1e07c94\n*** Element info: {Using\u003dxpath, value\u003d/html/body/div[4]/div[1]/div[4]/div[2]/form/div/div[2]/div[2]/div[2]/div[2]/span[2]/span}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\r\n\tat com.sun.proxy.$Proxy16.getText(Unknown Source)\r\n\tat pageobject_demosite.register_demo.getmessage1(register_demo.java:129)\r\n\tat stepdefination_demo.RegisterDemo.display_firstname_alert_message(RegisterDemo.java:76)\r\n\tat ✽.display firstname alert message(C:/salenium practice/com.sprint2.demo/target/test-classes/featurefiles/register_demo.feature:15)\r\n",
+              "duration": 12164105000,
+              "status": "failed"
+            },
+            "line": 15,
+            "name": "display firstname alert message",
+            "match": {
+              "location": "RegisterDemo.display_firstname_alert_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@unsuccessful_registration1"
+          }
+        ]
+      }
+    ],
+    "name": "Registration Action",
+    "description": "",
+    "id": "registration-action",
+    "keyword": "Feature",
+    "uri": "C:/salenium practice/com.sprint2.demo/target/test-classes/featurefiles/register_demo.feature",
+    "tags": []
+  }
+]
